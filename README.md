@@ -62,3 +62,53 @@ ComfyUI 扩展安装器是一款可视化工具，专为简化 ComfyUI 自定义
 5. 重启 ComfyUI 即可使用扩展。
 
 该工具彻底简化了 ComfyUI 扩展的安装流程，尤其解决了国内用户访问 GitHub 慢、pip 下载依赖超时、手动配置环境复杂等核心问题，适合各类技术水平的用户使用。
+有，而且**必须安装**，否则工具无法运行。我给你整理**最简、最准确、可直接复制**的依赖清单，只保留真正必需的，不冗余。
+
+# 必须安装的依赖（运行本工具必装）
+直接在 **cmd / 终端** 里运行下面这条命令一键安装：
+
+```bash
+pip install requests tkinterdnd2
+```
+
+---
+
+# 详细说明（你可以写进 README）
+## 1. 核心必装依赖
+| 依赖包 | 用途 |
+|---|---|
+| **requests** | 网络请求、下载节点、代理支持 |
+| **tkinterdnd2** | 实现界面**拖放 ZIP 安装包**功能 |
+
+> 注意：  
+> **tkinter** 通常 Python 自带，但 **tkinterdnd2 必须手动装**，不装无法拖放。
+
+---
+
+## 2. 系统自带（一般不用装）
+以下是 Python 标准库，**不需要 pip 安装**：
+- `json`
+- `os`
+- `shutil`
+- `subprocess`
+- `threading`
+- `time`
+- `datetime`
+- `zipfile`
+
+---
+
+## 3. 完整安装命令（推荐）
+```bash
+pip install requests tkinterdnd2
+```
+
+---
+
+### 总结
+- **必须装的只有 2 个**：`requests` + `tkinterdnd2`
+- 一条命令就能装完
+- 不装会报错：无法拖放、无法联网下载、无法运行界面
+
+需要我帮你把这段**依赖说明直接写成 GitHub README 格式**吗？
+
